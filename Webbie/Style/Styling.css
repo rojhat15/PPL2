@@ -1,0 +1,63 @@
+.fa-star,
+.fa-star-half{
+	color: yellowgreen;
+	padding: 3% 0;
+}
+
+#cart_count{
+	text-align: center;
+	padding: 0 0.9rem 0.1rem 0.9rem;
+	border-radius: 3rem;
+}
+
+.cart-items + .cart-items{
+	padding: 2% 0;
+}
+
+.price-details h6{
+	padding: 3% 2%;
+}
+
+.profile-icon{
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 40px;
+  height: 42px;
+}
+
+.pl-3, .px-3{
+	padding-left: 0rem!important;
+}
+
+li {
+	list-style-type: none;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 25px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+.prijsproduct{
+	position: absolute;
+	bottom: 10%;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
