@@ -9,15 +9,15 @@ function component($productname, $productprice, $productimg, $productid, $produc
 					<div>
 						<img src=\"$productimg\" alt=\"Image1\" class=\"img-fluid card-img-top\">
 					</div>
-					<div class=\"card-body bg-secondary\">
-						<h5 class=\"card-title\">$productname</h5>
+					<div class=\"card-body bg-dark\">
+						<h5 class=\"card-title text-white\">$productname</h5>
 						<h6>
 							
 						</h6>
 						<p class=\"card-text\">
 						</p>
 						<h5>
-							<span class=\"price\">$$productprice</span>
+							<span class=\"price text-white\">€ $productprice</span>
 						</h5>
 						
 						<button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Toevoegen winkelmand <i class=\"fas fa-shopping-cart\"></i></button>

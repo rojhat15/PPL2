@@ -22,32 +22,32 @@
 		<?php
 			if (isset($_GET['error'])) {
 				if ($_GET['error'] == "emptyfields") {
-					echo '<p class="signuperror">Fill in all fields!</p>';
+					echo '<p class="signuperror"><br>Vul alle velden in!</p>';
 				}
 				else if ($_GET["error"] == "invaliduidmail") {
-					echo '<p class="signuperror">Invalid username and e-mail!</p>';
+					echo '<p class="signuperror"><br>Ongeldige gebruikersnaam en e-mail!</p>';
 				}
 				else if ($_GET["error"] == "invaliduid") {
-					echo '<p class="signuperror">Invalid username!</p>';
+					echo '<p class="signuperror"><br>Ongeldige username!</p>';
 				}
 				else if ($_GET["error"] == "invalidmail") {
-					echo '<p class="signuperror">Invalid e-mail!</p>';
+					echo '<p class="signuperror"><br>Ongeldige e-mail!</p>';
 				}
 				else if ($_GET["error"] == "passwordcheck") {
-					echo '<p class="signuperror">Your passwords do not match!</p>';
+					echo '<p class="signuperror"><br>Wachtwoorden matchen niet!</p>';
 				}
 				else if ($_GET["error"] == "usertaken") {
-					echo '<p class="signuperror">Username is already taken!</p>';
+					echo '<p class="signuperror"><br>Gebruikersnaam is al in gebruik!</p>';
 				}
 				else if ($_GET["error"] == "emailtaken") {
-					echo '<p class="signuperror">E-mail is already taken!</p>';
+					echo '<p class="signuperror"><br>E-mail is al in gebruik!</p>';
 				}
 				else if ($_GET["error"] == "uidmailtaken") {
-					echo '<p class="signuperror">Username and e-mail is already taken!</p>';
+					echo '<p class="signuperror"><br>Gebruikersnaam en e-mail zijn al in gebruik!</p>';
 				}
 			}
 			else if ($_GET["signup"] == "succes") {
-				echo '<p class="signupsucces">Signup succesfull!</p>';
+				echo '<p class="signupsucces">Signup voltooid!</p>';
 			}
 		?>
 		<br><br>
@@ -58,7 +58,7 @@
 				<h3 class="text-center py-1">Login</h3>
 				<input type="text" class="form-control my-2" name="mailuid" placeholder="Gebruikersnaam/E-mail">
 				<input type="password" class="form-control my-2" name="pwd" placeholder="Wachtwoord">
-				<button type="submit" class="form-control bg-secondary text-white" name="login-submit">Login</button>
+				<button type="submit" class="form-control bg-dark text-white" name="login-submit">Login</button>
 				<br>
 			</div>
 		</form>	
@@ -70,9 +70,9 @@
 				<input type="text" class="form-control my-2" name="mail" placeholder="E-mail">
 				<input type="password" class="form-control my-2" name="pwd" placeholder="Wachtwoord">
 				<input type="password" class="form-control my-2" name="pwd-repeat" placeholder="Herhaal wachtwoord">
-				<button type="submit" class="form-control bg-secondary text-white" name="signup-submit">Signup</button>
+				<button type="submit" class="form-control bg-dark text-white" name="signup-submit">Signup</button>
 				<br>
-				<a href="reset-password.php">Forgot your password?</a>
+				<a href="">Wachtwoord vergeten?</a>
 			</div>
 		</form>
 	</div>

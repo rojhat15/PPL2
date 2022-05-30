@@ -87,10 +87,10 @@ if(isset($_POST['remove'])){
 						<h6>Nog te betalen</h6>
 					</div>
 					<div class="col-md-6">
-						<h6>$<?php echo $total; ?></h6>
+						<h6>€ <?php echo $total; ?></h6>
 						<h6 class="text-success">GRATIS</h6>
 						<hr>
-						<h6>$<?php
+						<h6>€ <?php
 							echo $total;
 						?>
 						<?php

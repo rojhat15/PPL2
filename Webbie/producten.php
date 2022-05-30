@@ -14,7 +14,7 @@ if(isset($_POST['add'])){
 		$item_array_id = array_column($_SESSION['Cart'], "product_id");
 		
 		if(in_array($_POST['product_id'], $item_array_id)){
-			echo "<script>alert('Product is already added in the cart..!')</script>";
+			echo "<script>alert('Uw product is al toegevoegd')</script>";
 			echo "<script>window.location = 'producten.php'</script>";
 		}else{
 			
@@ -55,7 +55,7 @@ error_reporting(0);
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="Style/Styling.css">
-	<!-- (verplicht inloggen om producten pagina te bereiken)
+	<!-- (verplicht inloggen om producten pagina te bereiken uitgeschakeld)
 		<?php if (isset($_SESSION['userId'])) { 
 				
 			} else {
@@ -74,9 +74,9 @@ error_reporting(0);
 <br>
 <br>
 <b>Sorteren op:</b>
-<a href="producten.php?sort=desc">Productnummer</a>
-<a href="producten.php?sort=status">Omschrijving</a>
-<a href="producten.php?sort=prijs">Prijs</a>
+<a href="producten.php?sort=status">Naam</a> |
+<a href="producten.php?sort=desc">Datum</a> |
+<a href="producten.php?sort=prijs">Prijs oplopend</a>
 	<div class="row text-center py-5">	
 	
 			

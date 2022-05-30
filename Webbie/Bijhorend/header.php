@@ -4,8 +4,10 @@
 	
 	
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-secondary text-white">
-			<a class="navbar-brand text-white" href="index.php">Webbie</a>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark text-white">
+			<a class="navbar-brand text-white" href="index.php">
+				<img src="Images/webbie logo.png" width="150" height="30">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -37,7 +39,7 @@
 				</ul>
 				
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<input class="form-control mr-sm-2" type="search" placeholder="Zoeken..." aria-label="Search">
 				</form>
 				
 				<a href="winkelmand.php" class="nav-item nav-link active">
@@ -82,7 +84,7 @@
 						<?php
 						if (isset($_SESSION['userId'])) {;}
 						else{ 
-						echo '<div class=""><a href="signup.php" class="ml-4" style="color: black; text-decoration: underline;">Signup</a></div>';}
+						echo '<div class=""><a href="signup.php" class="ml-4" style="color: black; text-decoration: underline;">Signup / Login</a></div>';}
 						?>
 				
 				</div>
